@@ -8,7 +8,6 @@ arr.map(s => {
         else{
             obj[letter]=1
         }
-        // obj[letter] = (obj[letter] || 0) + 1;
     })
 })
 console.log(obj)

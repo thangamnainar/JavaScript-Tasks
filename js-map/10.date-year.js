@@ -8,7 +8,10 @@ const names = [
 let obj ={}
 names.map(s => {
        
-    if (!(s.date in obj)){
+    if ((new Date(s.date).getFullYear() in obj)){
+        obj[new Date(s.date).getFullYear()].push({name :s.name})
+    }
+    else{
         obj[new Date(s.date).getFullYear()]=[{name:s.name}]
     }
 })
