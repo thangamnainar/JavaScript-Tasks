@@ -12,4 +12,4 @@ names.map(s => {
         obj[new Date(s.date).getFullYear()]=[{name:s.name}]
     }
 })
-console.log(obj)
+console.log(obj)    
